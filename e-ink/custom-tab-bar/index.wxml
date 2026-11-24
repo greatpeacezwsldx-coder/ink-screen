@@ -1,0 +1,14 @@
+<view class="custom-tab-bar">
+  <view 
+    wx:for="{{list}}" 
+    wx:key="index" 
+    class="tab-item {{active === index ? 'active' : ''}}"
+    bindtap="onTabClick"
+    data-index="{{index}}"
+  >
+    <view class="icon-wrapper">
+      <t-icon prefix="wr" name="{{item.icon}}" size="52rpx" />
+    </view>
+    <view class="text">{{ item.text }}</view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/Photos",
+    "pages/ThisDayBefore",
+    "pages/BestPhotoBefore"
+  ]
+}

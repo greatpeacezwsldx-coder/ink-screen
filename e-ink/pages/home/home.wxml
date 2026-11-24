@@ -1,0 +1,103 @@
+<view style="text-align: center; color: #b9b9b9" wx:if="{{pageLoading}}">
+  <t-loading theme="circular" size="40rpx" text="加载中..." inherit-color />
+</view>
+<view class="custom-navbar">
+  <view class="navbar-title">首页</view>
+</view>
+<view class="home-page-header">
+  <view class="welcome-text">欢迎，SITer！</view>
+  <view class="swiper-wrap" style="height: {{swiperHeight}}px;">
+    <t-swiper
+      wx:if="{{imgSrcs.length > 0}}"
+      current="{{current}}"
+      autoplay="{{autoplay}}"
+      duration="{{duration}}"
+      interval="{{interval}}"
+      navigation="{{navigation}}"
+      imageProps="{{swiperImageProps}}"
+      list="{{imgSrcs}}"
+      height="{{swiperHeight}}"
+      bind:click="navToActivityDetail"
+    />
+  </view>
+</view>
+<view class="home-page-container">
+  <view class="home-page-tabs">
+    <view class="custom-tabs">
+      <view
+        wx:for="{{tabList}}"
+        wx:key="key"
+        class="custom-tab {{tabIndex === item.key ? 'custom-tab-active' : ''}}"
+        data-key="{{item.key}}"
+        bind:tap="onTabClick"
+      >
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="tab-content-wrap">
+    <view wx:if="{{tabIndex === 0}}" class="best-photo-section">
+      <view class="best-photo-card">
+        <image class="best-photo-img" src="{{bestPhoto.url}}" mode="widthFix" />
+        <view class="best-photo-info">
+          <view class="best-photo-side-caption">{{bestPhoto.side_caption}}</view>
+          <view class="best-photo-caption">{{bestPhoto.caption}}</view>
+          <view class="best-photo-tags">
+            <view class="tag tag-memory">回忆分 {{bestPhoto.memory_score}}</view>
+            <view class="tag tag-beauty">美观分 {{bestPhoto.beauty_score}}</view>
+          </view>
+          <view class="best-photo-reason">{{bestPhoto.reason}}</view>
+          <view class="best-photo-meta">
+            <text class="meta-item">{{bestPhoto.type}}</text>
+            <text class="meta-divider">|</text>
+            <text class="meta-item">{{bestPhoto.exif_make}} {{bestPhoto.exif_model}}</text>
+            <text class="meta-divider">|</text>
+            <text class="meta-item">{{bestPhoto.exif_datetime}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{tabIndex === 3}}" class="other-best-section">
+      <view class="photo-grid">
+        <view wx:for="{{otherBestPhotos}}" wx:key="name" class="photo-grid-item">
+          <image class="photo-grid-img" src="{{item.url}}" mode="aspectFill" lazy-load />
+        </view>
+      </view>
+      <view wx:if="{{otherBestPhotos.length === 0}}" class="loading-placeholder">
+        <t-loading theme="circular" size="40rpx" text="加载中..." inherit-color />
+      </view>
+    </view>
+    <view wx:elif="{{tabIndex === 2}}" class="all-photos-section">
+      <view class="photo-grid">
+        <view wx:for="{{allPhotos}}" wx:key="name" class="photo-grid-item">
+          <image class="photo-grid-img" src="{{item.url}}" mode="aspectFill" lazy-load />
+        </view>
+      </view>
+      <view wx:if="{{allPhotos.length === 0}}" class="loading-placeholder">
+        <t-loading theme="circular" size="40rpx" text="加载中..." inherit-color />
+      </view>
+    </view>
+    <view wx:elif="{{tabIndex === 1}}" class="today-photos-section">
+      <view class="photo-grid">
+        <view wx:for="{{todayPhotos}}" wx:key="name" class="photo-grid-item">
+          <image class="photo-grid-img" src="{{item.url}}" mode="aspectFill" lazy-load />
+        </view>
+      </view>
+      <view wx:if="{{todayPhotos.length === 0}}" class="loading-placeholder">
+        <view class="placeholder-text">今天没有照片</view>
+        <view class="placeholder-sub">暂无往年今日的照片</view>
+      </view>
+    </view>
+    <view wx:else>
+      <goods-list
+        wr-class="goods-list-container"
+        goodsList="{{goodsList}}"
+        bind:click="goodListClickHandle"
+        bind:addcart="goodListAddCartHandle"
+      />
+      <load-more list-is-empty="{{!goodsList.length}}" status="{{goodsListLoadStatus}}" bind:retry="onReTry" />
+    </view>
+  </view>
+  <t-toast id="t-toast" />
+</view>

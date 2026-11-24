@@ -1,0 +1,79 @@
+[InkTime] DB: /Users/zhangwei/Desktop/source/html/photos.db
+[InkTime] IMAGE_DIR: /Users/zhangwei/Desktop/source/html/test
+[InkTime] OUT: /Users/zhangwei/Desktop/source/html/output
+[InkTime] key: yourdownloadkey
+[InkTime] listen: 0.0.0.0:8765
+[InkTime] open: http://127.0.0.1:8765/  (本机)
+ * Serving Flask app 'server'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8765
+ * Running on http://192.168.3.15:8765
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [15/Jun/2026 21:06:13] "[32mGET / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /review HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/20210606_IMG_9318.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/20210606_IMG_9320.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/20210606_IMG_9321.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/20210606_IMG_9319.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/20210606_IMG_9323.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/20210606_IMG_9324.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/IMG_0753.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/IMG_0726.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/IMG_0755.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/IMG_3471.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/IMG_0758.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/20200621_IMG_7155.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "[36mGET /images/IMG_0752.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "GET /images/20200712_IMG_7273.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "[36mGET /images/20200627_IMG_7185.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "[36mGET /images/20200627_IMG_7186.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "[36mGET /images/20200627_IMG_7176.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "[36mGET /images/20210606_IMG_9322.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "[36mGET /images/20200627_IMG_7188.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "[36mGET /images/20200627_IMG_7177.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [15/Jun/2026 21:06:19] "GET /sim?img=/images/IMG_0752.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:29] "GET /sim?img=/images/IMG_3471.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:30] "GET /sim_render?img=/images/IMG_3471.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20210606_IMG_9324.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20210606_IMG_9321.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20210606_IMG_9319.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20210606_IMG_9323.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20200627_IMG_7177.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_0726.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20200712_IMG_7273.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20200627_IMG_7185.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20210724_IMG_9830.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_0737.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_0738.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_0751.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_0756.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_0754.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_0759.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_3490.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_3132.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20200712_IMG_7272.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20200712_IMG_7274.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_0753.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/IMG_3310.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "GET /images/20200620_IMG_7147.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_0752.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_0758.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20200621_IMG_7155.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_0755.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20210606_IMG_9320.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20210606_IMG_9318.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20210606_IMG_9322.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_0757.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20200627_IMG_7188.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20200627_IMG_7176.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20200627_IMG_7186.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_3797.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20200704_IMG_7198.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_3471.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/20200627_IMG_7187.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_3788.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_0741.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:22:42] "[36mGET /images/IMG_3473.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [17/Jun/2026 15:24:00] "GET /sim?img=/images/IMG_0752.JPG HTTP/1.1" 200 -
