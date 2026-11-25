@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# 编译产物（Arduino/PlatformIO）
+*.o
+*.elf
+*.bin
+.pio/
+build/
+
+# IDE
+.vscode/
+.idea/
